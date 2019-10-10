@@ -1,3 +1,3 @@
-# Deprecated: angular-sortablejs-demo
+npm i
 
-Use the ngx-sortablejs builtin demo
+ng serve
