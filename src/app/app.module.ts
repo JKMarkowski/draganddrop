@@ -5,8 +5,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DragDropModule } from "@angular/cdk/drag-drop";
 
 import { AppComponent } from './app.component';
-import {DragListDirective} from './drag-list.directive';
-import { DragItemDirective } from './drag-item.directive';
 
 @NgModule({
   imports: [
@@ -15,7 +13,7 @@ import { DragItemDirective } from './drag-item.directive';
     CommonModule,
     DragDropModule
   ],
-  declarations: [ AppComponent, DragListDirective, DragItemDirective ],
+  declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

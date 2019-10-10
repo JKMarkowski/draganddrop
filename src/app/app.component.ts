@@ -94,6 +94,7 @@ export class AppComponent {
 
 
     this.closestLinkIndex = null;
+    this.closestLinkPosition = null;
   }
 
   isDragged(ind: number): boolean {
