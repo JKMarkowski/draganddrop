@@ -15,6 +15,11 @@
   max-width: 900px;
 }
 
+.example-container.list {
+  display: block;
+  width: 300px;
+}
+
 .example-box {
   width: 200px;
   height: 200px;
@@ -52,6 +57,21 @@
   background: black;
   left: -5px;
   top: 0;
+}
+
+.example-line--before.list {
+  width: 300px;
+  height: 2px;
+  left: 0;
+  top: -5px;
+}
+
+.example-line--after.list {
+  width: 300px;
+  height: 2px;
+  left: 0;
+  top: initial;
+  bottom: -5px;
 }
 
 .element-container {

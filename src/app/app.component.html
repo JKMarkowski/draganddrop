@@ -1,4 +1,4 @@
-<div class="example-container">
+<div class="example-container" [ngClass]="{'list': list}">
   <ng-container *ngFor="let item of items; let ind = index">
     <div class="element-container">
       <div>
@@ -13,8 +13,8 @@
           </div>
         </div>
 
-        <div class="example-line--after" *ngIf="closestLinkIndex === ind && closestLinkPosition === 'after'"></div>
-        <div class="example-line--before" *ngIf="closestLinkIndex === ind && closestLinkPosition === 'before'"></div>
+        <div class="example-line--after" *ngIf="closestLinkIndex === ind && closestLinkPosition === 'after'" [ngClass]="{'list': list}"></div>
+        <div class="example-line--before" *ngIf="closestLinkIndex === ind && closestLinkPosition === 'before'" [ngClass]="{'list': list}"></div>
       </div>
     </div>
   </ng-container>

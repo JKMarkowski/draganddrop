@@ -18,6 +18,8 @@ export interface ElementChord {
 
 export class AppComponent {
 
+  readonly list: boolean = true;
+
   @ViewChildren(CdkDrag)
   cdkDragElements: QueryList<CdkDrag>;
 
@@ -62,7 +64,7 @@ export class AppComponent {
 
       const position: LinkPosition = isBefore() ? 'before' : 'after';
 
-      const x = rect.x + (isBefore() ? 0 : link.element.nativeElement.offsetWidth);
+      const x = rect.x + (isBefore() || this.list ? 0 : link.element.nativeElement.offsetWidth);
 
       return {
         x: x,
